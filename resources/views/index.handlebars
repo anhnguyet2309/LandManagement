@@ -1,0 +1,35 @@
+<header>
+    {{> header }}
+</header>
+<div id="flex-container">
+    <div class="Slide_Fix">
+ 
+               
+ {{>slidebar }}
+  
+    </div>
+
+    <div class="thuoctinh3">
+         
+            <nav class="social">
+                <ul>
+                    <li class="Bản đồ"><a href="/index">Thống kê<i class="fas fa-tractor" aria-hidden="true" style="width:10%"></i></a></li>
+                    <li class="facebook"> <a href="/nongtrai"> Vùng nông trại  <i class="fas fa-radiation-alt" aria-hidden="true"style="width:10%" ></i></a></li>
+                    <li class="google-plus"><a href="/find">Tìm kiếm <i class="fa fa-arrows-alt" aria-hidden="true" style="width:10%"></i></a></li>
+                 
+                </ul>
+            </nav>
+            <div class="marker-position">click on the map, move the marker, click on the marker</div>
+           
+        <div id="map"></div>
+    </div>
+</div>
+
+<div id="Tinhtoan"></div>
+<script>
+    var data = {{{ dataNongTrai}}};
+</script>
+<script src="./js/leaflet.js"></script>
+<script src="./js/index.js"></script>
+
+ {{>slidebar }}
